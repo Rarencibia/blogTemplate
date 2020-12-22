@@ -1,0 +1,151 @@
+$border: 3px solid black;
+$box-shadow: 3px 3px 10px black;
+$padding-description-area: 15px;
+$gap: 30px;
+
+html body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-style: "Raleway", sans-serif;
+
+}
+
+
+.introductionWrapper {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+.blogWrapper {
+
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: $gap;
+
+    .newEntriesBlock{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 50px;
+
+    }
+
+    .newBlogWrapper {
+        box-shadow: $box-shadow;
+        width: 100%;
+
+        
+    }
+
+    .newImgWrapper {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .blogHeaderImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .newBlogDescription {
+        padding: $padding-description-area;
+    }
+
+    #secondBlogImg {
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+
+
+
+}
+
+.oldEntriesWrapper  {
+    margin-right: 10px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+
+    .selfIntroWrapper   {
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+        box-shadow: $box-shadow;
+
+
+    }
+    .selfImgWrapper {
+        width: 100%;
+        height: 35vh;
+
+    }
+    .selfImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .selfIntro {
+        padding: $padding-description-area;
+    }
+
+
+
+    .popularPostsWrapper {
+        padding: $padding-description-area;
+        font-size: 14px;
+        box-shadow: $box-shadow;
+    }
+    .popularPosts {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+
+
+    }
+
+
+    .popularBlogImg {
+        width: 100px;
+        height: 100px;
+
+        &:hover {
+            transition-duration: 1s;
+            transition: ease-in-out;
+            transform: scale(1.2);
+        };
+    }
+
+    .popularBlogDescription {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+
+    }
+
+
+    .popularBlogImg {
+        object-fit: cover;
+    }
+
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
