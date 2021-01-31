@@ -231,5 +231,8 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
+  .blogWrapper .selfIntroWrapper {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
