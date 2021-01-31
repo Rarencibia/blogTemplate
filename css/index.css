@@ -192,10 +192,10 @@ footer {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
-    margin-top: 30px;
   }
   .blogWrapper .newEntriesBlock {
     width: 99%;
+    margin-top: 30px;
   }
   .blogWrapper .popularPostsWrapper {
     display: -webkit-box;
@@ -212,6 +212,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     width: 98%;
+    margin-top: 30px;
   }
   .blogWrapper .oldEntriesWrapper {
     margin-top: 30px;
