@@ -13,7 +13,7 @@ html body {
 
 .blogWrapper {
   margin: auto;
-  width: 80%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,12 +134,14 @@ html body {
 }
 
 .oldEntriesWrapper .popularBlogImg:hover {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
   -webkit-transition: ease-in-out;
   transition: ease-in-out;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
 }
 
 .oldEntriesWrapper .popularBlogDescription {
@@ -159,8 +161,57 @@ html body {
      object-fit: cover;
 }
 
+.button:hover {
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
 footer {
   margin-top: 100px;
   text-align: center;
+}
+
+/*Media Query for cellphones*/
+@media screen and (max-width: 850px) {
+  .blogWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogWrapper .newEntriesBlock {
+    width: 95%;
+  }
+  .blogWrapper .oldEntriesWrapper {
+    gap: 20px;
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=index.css.map */
